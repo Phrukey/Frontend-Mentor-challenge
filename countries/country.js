@@ -61,7 +61,7 @@
          countryEl.className = "card";
          countryEl.innerHTML = `
                 <div class="country-header">
-                    <img src=${country.flag} alt=${country.nativeName}>
+                    <img src=${country.flag} alt=${country.name}>
                 </div>
                 <div class="card-body">
                     <h2 class="name" data-cioc="${country.cioc}">${country.name}</h2>
