@@ -18,7 +18,8 @@ body {
     background-color: #F4F4FC;
     width: 100vw;
     min-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+    padding: 1px;
 }
 
 img {
@@ -32,6 +33,17 @@ img {
     height: 90vh;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 2px solid red;
+    transition: transform 500ms ease-out;
 }
 
 .content {
@@ -45,7 +57,10 @@ img {
     top: 0;
     width: 100%;
     height: 100%;
-    /* transition: transform 300ms ease-out; */
+}
+
+.content:nth-child(2) {
+    left: 100%;
 }
 
 .image-div {
@@ -83,11 +98,6 @@ img {
 .prev,
 .next {
     cursor: pointer;
-}
-
-#tanya,
-#john {
-    transition: transform 500ms ease-out;
 }
 
 .image-div img {
@@ -132,19 +142,6 @@ img {
     font-size: 16px;
     font-weight: 500;
     color: var(--gray-blue);
-}
-
-.content {
-    transform: translateX(0);
-    /* transition: transform 300ms linear; */
-}
-
-#tanya:target {
-    transform: translateX(0);
-}
-
-#john:target {
-    transform: translateX(100%);
 }
 
 .attribution {
@@ -223,7 +220,7 @@ img {
         overflow: auto;
     }
     .slide {
-        min-height: 80vh;
+        height: 110vh;
     }
     .text-div {
         text-align: center;
@@ -239,8 +236,7 @@ img {
         margin: 5px auto;
         margin-left: -30px;
     }
-    #tanya,
-    #john {
+    .slider {
         transition: transform 300ms ease-out;
     }
 }
