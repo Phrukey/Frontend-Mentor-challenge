@@ -36,7 +36,7 @@ async function getData() {
     <img src=${element.logo} alt="Company Logo">
     <div class="job">
                 <div>
-                    <span class="name">${element.company}</span>
+                    <h4 class="name">${element.company}</h4>
                     <span class="new">${element.new}</span>
                     <span class="featured">${element.featured}</span>
                 </div>
