@@ -1,0 +1,33 @@
+ body {
+     background-color: #000;
+ }
+ 
+ .content div {
+     display: block;
+     margin: 20px auto;
+     width: 100px;
+     height: auto;
+ }
+ 
+ .imageDiv {
+     margin: 2rem auto;
+     width: 70vw;
+     height: auto;
+ }
+ 
+ .imageDiv div {
+     margin: 12px 0;
+     border: 1px solid #fff;
+     padding: 0;
+     display: grid;
+     place-content: center;
+     color: #fff;
+ }
+ 
+ .par {
+     font-size: 18px;
+ }
+ 
+ .imageDiv div img {
+     border: 1px solid lime;
+ }
